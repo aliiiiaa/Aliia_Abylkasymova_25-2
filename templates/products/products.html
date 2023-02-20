@@ -1,0 +1,46 @@
+{% extends 'layouts/index.html' %}
+
+{% block content %}
+    <style type="text/css">
+        .posts {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .post_block {
+            margin: 20px;
+            transition: all 0.3s;
+        }
+
+        .post_block:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .post_image {
+            width: 100%;
+
+        }
+    </style>
+    <div class="posts">
+        {% for product in products %}
+            <div class="post_block">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <img class="post_image" src="/media/ {{ product.image }}">
+                        <h5 class="card-title">{{ product.title }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Rate: {{ product.rate }}</h6>
+                        {% for hashtag in post.hashtags %}
+                            <p>{{ hashtag.title }}</p>
+                        {% endfor %}
+                        <a href="#" class="card-link">More</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
