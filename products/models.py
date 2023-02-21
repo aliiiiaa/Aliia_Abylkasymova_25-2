@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 class Hashtag(models.Model):
@@ -20,4 +21,11 @@ class Product(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Comment(models.Model):
+    text = models.CharField(max_length=255)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    create_date = models.DateField(auto_now_add=True)
+
 
