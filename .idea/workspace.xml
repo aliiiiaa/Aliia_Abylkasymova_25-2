@@ -7,19 +7,45 @@
     <list default="true" id="bb174ed6-a9ce-4975-bc94-6da67b6f04dc" name="Changes" comment="5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/products/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/products/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mystore/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mystore/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate.fish" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate.nu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate_this.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/deactivate.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/deactivate.nu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/django-admin.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip-3.11.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.11.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/pydoc.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/python.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/pythonw.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/sqlformat.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/wheel-3.11.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/wheel.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/wheel3.11.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/wheel3.exe" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -35,21 +61,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Welcome/Downloads/jetbra-1126574a2f82debceb72e7f948eb7d4f616ffddf&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Welcome/Downloads/jetbra-1126574a2f82debceb72e7f948eb7d4f616ffddf",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Python.manage">
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mystore" />
@@ -136,7 +163,8 @@
       <workItem from="1677397040166" duration="615000" />
       <workItem from="1677398756967" duration="4000" />
       <workItem from="1677470543995" duration="217000" />
-      <workItem from="1677504996262" duration="693000" />
+      <workItem from="1677504996262" duration="960000" />
+      <workItem from="1677507045534" duration="5242000" />
     </task>
     <task id="LOCAL-00001" summary="3hw">
       <created>1676857212675</created>

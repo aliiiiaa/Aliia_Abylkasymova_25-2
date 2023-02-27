@@ -25,7 +25,8 @@ def products_view(request):
 
                 }
                 for product in products
-            ]
+            ],
+            'user': request.user
         }
         return render(request, 'products/products.html', context=context)
 
