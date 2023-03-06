@@ -4,33 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb174ed6-a9ce-4975-bc94-6da67b6f04dc" name="Changes" comment="5">
+    <list default="true" id="bb174ed6-a9ce-4975-bc94-6da67b6f04dc" name="Changes" comment="6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mystore/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mystore/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/products.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/products.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate.fish" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate.nu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate_this.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/deactivate.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/deactivate.nu" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/django-admin.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip-3.11.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.11.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pydoc.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/python.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pythonw.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/sqlformat.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/wheel-3.11.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/wheel.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/wheel3.11.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/wheel3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/products/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/products/products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/users/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/users/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -73,7 +54,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Debugger",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -164,7 +145,9 @@
       <workItem from="1677398756967" duration="4000" />
       <workItem from="1677470543995" duration="217000" />
       <workItem from="1677504996262" duration="960000" />
-      <workItem from="1677507045534" duration="5242000" />
+      <workItem from="1677507045534" duration="5286000" />
+      <workItem from="1677556226316" duration="135000" />
+      <workItem from="1678071302246" duration="3792000" />
     </task>
     <task id="LOCAL-00001" summary="3hw">
       <created>1676857212675</created>
@@ -215,7 +198,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677397396229</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="6">
+      <created>1677513018589</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677513018589</updated>
+    </task>
+    <task id="LOCAL-00009" summary="6">
+      <created>1677513032303</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677513032303</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +225,8 @@
     <MESSAGE value="4hw" />
     <MESSAGE value="5hw" />
     <MESSAGE value="5" />
-    <option name="LAST_COMMIT_MESSAGE" value="5" />
+    <MESSAGE value="6" />
+    <option name="LAST_COMMIT_MESSAGE" value="6" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mystore$manage.coverage" NAME="manage Coverage Results" MODIFIED="1676900447472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

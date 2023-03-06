@@ -1,23 +1,42 @@
 
-        .posts {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            width: 80%;
-            margin-left: 10%;
-        }
+.posts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 10%;
+}
 
-        .post_block {
-            margin: 20px;
-            transition: all 0.3s;
-        }
+.post_block {
+    margin: 20px;
+    transition: all 0.3s;
+}
 
-        .post_block:hover {
-            transform: scale(1.1);
-            cursor: pointer;
-        }
+.post_block:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
-        .post_image {
-            width: 100%;
+.post_image {
+    width: 100%;
 
-        }
+}
+.pages {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.page_button {
+    width: 35px;
+    height: 35px;
+    background: darkolivegreen;
+    border: 1px solid black;
+    color: #fff;
+    transition: all 0.3s;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.page_button:hover {
+    transform: scale(1.1);
+}
