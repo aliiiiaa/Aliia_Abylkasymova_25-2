@@ -2,18 +2,19 @@ from django.shortcuts import render, redirect
 from products.models import Product, Comment
 from products.forms import ProductCreateForms, CommentCreateForms
 from products.constants import PAGINATION_LIMIT
+from django.views.generic import CreateView, DetailView, ListView, DeleteView
 
 
-# Create your views here.
-
-def main_page_view(request):
-    if request.method == 'GET':
-        return render(request, 'layouts/index.html')
+class ManePageCBV(ListView):
+    model = Product
 
 
-def products_view(request):
-    if request.method == 'GET':
-        products = Product.objects.all()
+class ProductCBV(ListView):
+    model = Product
+    template_name = 'products/products.html'
+
+    def get(self,request, *args, **kwargs):
+        products = self.get_queryset().order_by('-rate')
         search = request.GET.get('search')
         page = int(request.GET.get('page', 1))
 
@@ -26,7 +27,7 @@ def products_view(request):
         else:
             max_page = round(max_page)
 
-        products = products[PAGINATION_LIMIT * (page-1): PAGINATION_LIMIT * page]
+        products = products[PAGINATION_LIMIT * (page - 1): PAGINATION_LIMIT * page]
 
         context = {
             'products': [
@@ -41,9 +42,9 @@ def products_view(request):
                 for product in products
             ],
             'user': request.user,
-            'pages': range(1, max_page+1)
+            'pages': range(1, max_page + 1)
         }
-        return render(request, 'products/products.html', context=context)
+        return render(request, self.template_name, context=context)
 
 
 def product_detail_view(request, id):
@@ -77,28 +78,32 @@ def product_detail_view(request, id):
         return render(request, 'products/detail.html', context=context)
 
 
-def create_product_view(request):
-    if request.method == 'GET':
-        context = {
-            'form': ProductCreateForms
-        }
-        return render(request, 'products/create.html', context=context)
+class CreateCBV(ListView, CreateView):
+    model = Product
+    template_name = 'products/create.html'
+    form_class = ProductCreateForms
 
-    if request.method == 'POST':
+    def get_context_data(self, *, object_list=None, **kwargs):
+        return {
+            'form': self.form_class if not kwargs.get('form') else kwargs['form']
+        }
+
+    def get(self, request, **kwargs):
+        return render(request, self.template_name, context=self.get_context_data())
+
+    def post(self, request, **kwargs):
         data, files = request.POST, request.FILES
 
-        form = ProductCreateForms(data, files)
+        form = self.form_class(data, files)
 
         if form.is_valid():
-            Product.objects.create(
+            self.model.objects.create(
                 image=form.cleaned_data.get('image'),
                 title=form.cleaned_data.get('title'),
                 description=form.cleaned_data.get('description'),
                 rate=form.cleaned_data.get('rate'),
             )
             return redirect('/products')
-        return render(request, 'products/create.html', context={
-            'form': form
-        })
+        return render(request, self.template_name, context=self.get_context_data())
 
 
